@@ -36,10 +36,9 @@ Ce projet implémente un jeu de mémoire basique où le joueur doit retourner de
 ## Règles du jeu
 
     Le jeu commence avec un ensemble de cartes faces cachées.
-    Les joueurs cliquent sur deux cartes pour révéler leurs valeurs.
-    Si les cartes correspondent, elles restent face visible.
-    Si les cartes ne correspondent pas, elles sont retournées face cachée.
-    Les joueurs continuent jusqu'à ce que toutes les paires soient trouvées.
+    Le joueur clique sur une carte pour révéler sa valeur.
+    Le joueur doit retourner toutes les cartes mais dans l'ordre croissant.
+    Si la carte retournée n'est pas celle esperée, toutes les cartes révelées sont retournées.
     Les temps de complétion les plus rapides donnent des scores plus élevés.
 
 ## Contribuer
