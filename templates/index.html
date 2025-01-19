@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu de Mémoire</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Jeu de Mémoire</h1>
+    <div id="game-container">
+        <h2 id="level">Niveau: 1</h2>
+        <h3 id="max-level">Niveau maximal atteint: {{ max_level }}</h3>
+        <div id="game-board">
+            <!-- Les cartes initiales s'afficheront ici -->
+        </div>
+        <button id="start-button">Commencer</button>
+        <button id="new-level-button" style="display: none;">Niveau suivant</button>
+        <button id="restart-button" style="display: none;">Recommencer</button>
+    </div>
+    <h2>Top Scores</h2>
+    <ul id="scores">
+        {% for score in scores %}
+        <li>{{ loop.index }}. {{ score['time'] }} secondes</li>
+        {% endfor %}
+    </ul>
+    <script src="/static/script.js"></script>
+</body>
+</html>
