@@ -4,7 +4,7 @@
 
 ## Description
 
-Ce projet implémente un jeu de mémoire basique où les joueurs doivent associer des paires de cartes dans un temps limité. 
+Ce projet implémente un jeu de mémoire basique où le joueur doit retourner des cartes dans leur ordre de valeur croissante. 
 
 ## Fonctionnalités
 
@@ -22,7 +22,7 @@ Ce projet implémente un jeu de mémoire basique où les joueurs doivent associe
 
 1. **Cloner le dépôt:**
    ```bash
-   git clone URL: https://github.com/Wodjidula/MemoryGame.git
+   git clone https://github.com/Wodjidula/MemoryGame.git
 2. **Créer un environnement virtuel (recommandé):**
    ```bash
    python3 -m venv venv
