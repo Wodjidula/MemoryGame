@@ -24,6 +24,29 @@
         <li>{{ loop.index }}. {{ score['time'] }} secondes</li>
         {% endfor %}
     </ul>
+
+    <!-- Bouton Instructions -->
+    <button id="instructions-button">Instructions</button>
+
+    <!-- Modale pour les instructions -->
+    <div id="instructions-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Instructions du Jeu</h2>
+            <p>
+                Bienvenue dans le Jeu de Mémoire ! Voici comment jouer :
+            </p>
+            <ul>
+                <li>Au début de chaque niveau, un ensemble de cartes est mélangé et affiché face cachée.</li>
+                <li>Votre objectif est de cliquer sur les cartes dans l'ordre croissant (1, 2, 3, etc.).</li>
+                <li>Si vous sélectionnez une carte incorrecte, toutes les cartes seront réinitialisées.</li>
+                <li>Terminez le niveau le plus rapidement possible pour atteindre un score élevé !</li>
+                <li>Utilisez le bouton "Niveau suivant" pour progresser ou "Recommencer" pour repartir à zéro.</li>
+            </ul>
+            <p>Amusez-vous bien et essayez d'atteindre le niveau le plus élevé possible !</p>
+        </div>
+    </div>
+
     <script src="/static/script.js"></script>
 </body>
 </html>
